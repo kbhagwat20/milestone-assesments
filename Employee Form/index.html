@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            border: none;
+            background-color:rgb(179, 255, 0);
+            padding: 14px 28px;
+            font-size: 15px;
+            cursor: pointer;
+            display:inline-block;
+        }
+        .btn:hover{background: rgb(228, 231, 11, 0.933);}
+        .main{
+            border:1px solid gray;
+            background-color: rgba(255, 255, 0, 0.411);
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Employee form</h2>
+    <div class="main">
+        <form action="/action.php name="myForm" id="myForm">
+            <label for="name">Employee name</label>
+            <input type="text" id="name" name="name" min="4" max="20">
+            <br><br/>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" id="male" value="male" checked>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other" value="other">
+            <label for="other">Other</label>
+
+            <br><br/>
+
+            <label for="hobbies">Hobbies:</label><br/>
+            <input type="checkbox" id="dancing" name="dancing" value="dancing">
+            <label for="dancing">Dancing</label><br>
+            <input type="checkbox" id="singing" name="singing" value="singing">
+            <label for="singing">Singing</label><br>
+            <input type="checkbox" id="painting" name="painting" value="painting">
+            <label for="painting">Painting</label><br>
+            <input type="checkbox" id="sports" name="sports" value="sports">
+            <label for="sports">Sports</label><br>
+            <br><br/>
+            <input type="submit" value="Submit">
+
+        </form>
+        <br/>
+        <div id="message"></div>
+
+    </div>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
